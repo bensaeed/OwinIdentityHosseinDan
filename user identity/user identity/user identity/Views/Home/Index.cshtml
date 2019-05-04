@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>خانه</h2>
+
+
+<p>
+    سلام @CurrentUser.Name. هوای @CurrentUser.Country چطوره?
+</p>
+
+<p>
+    <a href="@Url.Action("logout", "Account")">خروج</a>
+</p>

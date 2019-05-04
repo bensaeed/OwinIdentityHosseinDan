@@ -1,0 +1,16 @@
+﻿@model user_identity.Models.ViewModels.Register
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>عضویت</h2>
+
+@Html.ValidationSummary(false)
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">عضویت</button>
+    </p>
+}

@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>        * {
+                    direction:rtl;
+                }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    @RenderSection("Header",false)
+</head>
+<body>
+    @RenderBody()
+
+    @RenderSection("Footer",false)
+</body>
+</html>
